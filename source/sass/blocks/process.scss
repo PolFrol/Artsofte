@@ -1,0 +1,120 @@
+.process {
+  background-color: $basic-grey;
+  padding-bottom: 243px;
+}
+
+.process__title-wrapper {
+  text-align: center;
+  margin: 0 0 130px 0;
+  padding-top: 150px;
+}
+
+.process__title {
+  font-family: $font-additional;
+  font-size: $fs-additional;
+  line-height: $lh-accent;
+  text-transform: uppercase;
+  color: $special-grey;
+  margin: 0;
+}
+
+.process__add {
+  font-family: $font-additional;
+  font-size: $fs-accent;
+  line-height: $lh-accent;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.process__description {
+  font-size: $fs-tltle;
+  line-height: $lh-accent;
+  text-transform: uppercase;
+  margin: 0 0 13px 0;
+  font-family: $font-additional;
+  font-weight: 600;
+}
+
+.process__list {
+  display: flex;
+  column-gap: 30px;
+
+  @media (max-width: $modile-width) {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
+
+.process__item {
+  position: relative;
+  background-color: $basic-white;
+  text-align: center;
+  padding: 161px 38px 42px 38px;
+  border: 1px solid $special-black;
+  z-index: 0;
+
+  @media (max-width: $modile-width) {
+    width: 100%;
+  }
+}
+
+.process__item--grafic::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("/img/process/grafic.png");
+  width: 100px;
+  height: 100px;
+  top: 48px;
+  left: 35.6758%;
+}
+
+.process__item--hands::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("/img/process/hands.png");
+  width: 100px;
+  height: 100px;
+  top: 48px;
+  left: 35.6758%;
+}
+
+.process__item--card::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("/img/process/card.png");
+  width: 100px;
+  height: 100px;
+  top: 48px;
+  left: 35.6758%;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.process__item:hover .background {
+  background-image: linear-gradient(-18deg, $dark-blue, $light-blue);
+  transform: scaleY(1.3);
+
+  @media (max-width: $modile-width) {
+    transform: scaleX(1.2);
+  }
+}
+
+.process__item:hover {
+  color: $basic-white;
+}
+
+.process__text {
+  margin: 0;
+}

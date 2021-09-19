@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Artsofte test</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+    integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+  <header class="header header--opened header--nojs">
+    <div class="header__wrapper box">
+
+      <div class="header__image">
+        <a class="header__logo" href="index.html">
+          <img class="header__logo-picture" src="/img/logo.png" width="215" height="46" alt="Лого">
+        </a>
+        <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Cards
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Service
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Banking
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              FAQ
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Contact
+            </a>
+          </li>
+          <li class="nav__item">
+            <button class="nav__button" type="submit">Creat Account</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Digital Banking</h1>
+    <section class="promo">
+
+      <div class="promo__wrapper box">
+        <p class="promo__title">To Make Your Life Easier Take a Card</p>
+        <p class="promo__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered. There are many varitions of passages of Lorem Ipsum randomised words which don't look even slightly believable.</p>
+        <button class="promo__button" type="submit">Apply now</button>
+
+        <picture>
+          <source media="(max-width: 767px)" srcset="/img/promo-mobile.png">
+          <img class="promo__card" src="/img/promo.png" width="1178" height="509" alt="Карты">
+        </picture>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="process__wrapper box">
+        <h2 class="visually-hidden">Процесс</h2>
+        <div class="process__title-wrapper">
+          <p class="process__title">Easy Process</p>
+          <p class="process__add">To Get A Credit Card</p>
+        </div>
+
+        <ul class="process__list">
+          <li class="process__item process__item--grafic">
+            <div class="background"></div>
+            <div class="process__item-wrapper">
+              <h3 class="process__description">Online Application</h3>
+              <p class="process__text">Information in the database is published in two formats. It is available in PDF comparison according to type of credit card.</p>
+            </div>
+          </li>
+          <li class="process__item process__item--hands">
+            <div class="background"></div>
+            <div class="process__item-wrapper">
+              <h3 class="process__description">Get Approval</h3>
+              <p class="process__text">Information in the database is published in two formats. It is available in PDF comparison according to type of credit card.</p>
+            </div>
+          </li>
+          <li class="process__item process__item--card">
+            <div class="background"></div>
+            <div class="process__item-wrapper">
+              <h3 class="process__description">Get Your Card</h3>
+              <p class="process__text">Information in the database is published in two formats. It is available in PDF comparison according to type of credit card.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="slider__wrapper box">
+        <p class="process__title">Useful service avaible</p>
+        <p class="process__add slider__add">Service of Credit Card</p>
+
+        <div class="slider__carousel owl-carousel owl-loaded">
+          <button class="slider__button slider__button--prev owl-prev" type="button"></button>
+
+          <div class="slider__flex owl-stage-outer">
+            <div class="slider__list owl-stage">
+              <div class="slider__item owl-item">
+                <picture>
+                  <source type="image/webp" srcset="./img/slider/transform.webp">
+                  <img class="slider__photo" src="/img/slider/transform.jpg" width="270" height="270" alt="Balence transform">
+                </picture>
+                <p class="slider__text">Balence transform</p>
+              </div>
+              <div class="slider__item owl-item">
+                <picture>
+                  <source type="image/webp" srcset="./img/slider/banking.webp">
+                  <img class="slider__photo" src="/img/slider/banking.jpg" width="270" height="270" alt="Internet Banking">
+                </picture>
+                <p class="slider__text">Internet Banking</p>
+              </div>
+              <div class="slider__item owl-item">
+                <picture>
+                  <source type="image/webp" srcset="./img/slider/payment.webp">
+                  <img class="slider__photo" src="/img/slider/payment.jpg" width="270" height="270" alt="Buying Payment">
+                </picture>
+                <p class="slider__text">Buying Payment</p>
+              </div>
+              <div class="slider__item owl-item">
+                <picture>
+                  <source type="image/webp" srcset="./img/slider/ticket.webp">
+                  <img class="slider__photo" src="/img/slider/ticket.jpg" width="270" height="270" alt="Buy Air Ticket">
+                </picture>
+                <p class="slider__text">Buy Air Ticket</p>
+              </div>
+              <div class="slider__item owl-item">
+                <picture>
+                  <source type="image/webp" srcset="./img/slider/mobile.webp">
+                  <img class="slider__photo" src="/img/slider/mobile.jpg" width="270" height="270" alt="Mobile Recharge">
+                </picture>
+                <p class="slider__text">Mobile Recharge</p>
+              </div>
+              <div class="slider__item owl-item">
+                <picture>
+                  <source type="image/webp" srcset="./img/slider/sports.webp">
+                  <img class="slider__photo" src="/img/slider/sports.jpg" width="270" height="270" alt="Sports Ticket">
+                </picture>
+                <p class="slider__text">Sports Ticket</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider__button slider__button--next owl-next" type="button"></button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="user">
+      <div class="user__wrapper box">
+        <ul class="user__list">
+          <li class="user__item">
+            <span class="user__icon">
+              <i class="fas fa-users"></i>
+            </span>
+            <div>
+              <span class="user__number">725М</span>
+              <p class="user__text">Happy User</p>
+            </div>
+          </li>
+          <li class="user__item">
+            <span class="user__icon">
+              <i class="fas fa-heart"></i>
+            </span>
+            <div>
+              <span class="user__number">700М</span>
+              <p class="user__text">User Apprication</p>
+            </div>
+          </li>
+          <li class="user__item">
+            <span class="user__icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+            <div>
+              <span class="user__number">10М+</span>
+              <p class="user__text">Payment Service</p>
+            </div>
+          </li>
+          <li class="user__item">
+            <span class="user__icon">
+              <i class="fas fa-rocket"></i>
+            </span>
+            <div>
+              <span class="user__number">600М</span>
+              <p class="user__text">User Feedback</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="form__wrapper box">
+        <h2 class="form__title">Your Message</h2>
+        <form method="POST">
+          <div class="form__holder">
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input" type="text" name="name" id="form-name" placeholder="Your Name" required>
+                <label class="form__label" for="form-name"></label>
+              </li>
+              <li class="form__item">
+                <input class="form__input" type="email" name="email" id="form-email" placeholder="Email Address" required>
+                <label class="form__label"></label>
+              </li>
+              <li class="form__item">
+                <input class="form__input" type="text" name="subject" id="form-subject" placeholder="Subject">
+                <label class="form__label" for="form-subject"></label>
+              </li>
+            </ul>
+            <div>
+              <div>
+                <textarea class="form__textarea" rows="8" placeholder="Message"></textarea>
+              </div>
+
+              <button class="form__button" type="submit">Submit</button>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__img">
+      <div class="footer__text">
+        <p class="footer__copyright">Copyright @ Digital Marketing.</p>
+        <p class="footer__rights">AllRight Reseverd</p>
+      </div>
+    </div>
+  </footer>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  <script src="https://kit.fontawesome.com/138980d6bc.js" crossorigin="anonymous"></script>
+  <script src="/js/script.min.js"></script>
+</body>
+
+</html>
