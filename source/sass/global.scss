@@ -31,7 +31,11 @@ body {
   margin: 0 auto;
   width: 60.9375%;
 
-  @media (max-width: $modile-width) {
-    min-width: 39.9479%;
+  @media (max-width: $tablet-width) {
+    min-width: 94%;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 90%;
   }
 }

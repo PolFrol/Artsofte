@@ -1,12 +1,16 @@
 .slider__wrapper {
   margin-top: 148px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 80px;
+  }
 }
 
 .slider__list {
   display: flex;
   justify-content: center;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     flex-wrap: wrap;
     row-gap: 30px;
   }
@@ -35,7 +39,7 @@
 .slider__item:not(:last-child) {
   margin-right: 30px;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     margin: 0;
   }
 }
@@ -45,6 +49,10 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .slider__carousel {
@@ -52,30 +60,20 @@
   position: relative;
 }
 
-.slider__button {
-  position: absolute;
-  border: none;
-  background-color: transparent;
-  width: 33px;
-  height: 23px;
-  cursor: pointer;
-  background-image: url("/img/slider/arrow.svg");
-  background-repeat: no-repeat;
-  top: 47.1429%;
-}
-
 .owl-carousel .owl-stage-outer {
   position: relative;
 }
 
 .owl-nav {
+  cursor: pointer;
   position: absolute;
   width: 100%;
   height: 0;
-  top: 47.1429%;
+  top: 42.1429%;
   z-index: 999;
   display: flex;
   justify-content: space-between;
+  background-color: transparent;
 }
 
 .owl-prev {
@@ -84,7 +82,7 @@
   width: 33px;
   height: 23px;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     left: -55px;
   }
 }
@@ -96,11 +94,13 @@
   height: 23px;
   transform: rotate(180deg);
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     right: -55px;
   }
 }
 
-.owl-dot {
-  display: none;
+@media (min-width: $desktop-width-only) {
+  .owl-theme {
+    display: none;
+  }
 }

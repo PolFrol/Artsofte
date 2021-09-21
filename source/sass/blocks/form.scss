@@ -8,6 +8,10 @@
   margin: 135px 0 53px 0;
   font-family: $font-additional;
   font-weight: 600;
+
+  @media (max-width: $mobile-width) {
+    margin: 80px 0 40px 0;
+  }
 }
 
 .form__holder {
@@ -15,7 +19,7 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 70px;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     display: flex;
     flex-direction: column;
   }
@@ -26,7 +30,7 @@
   margin-bottom: 30px;
 }
 
-@media (max-width: $modile-width) {
+@media (max-width: $mobile-width) {
   .form__item:nth-child(3) {
     margin-bottom: 30px;
   }
@@ -59,6 +63,10 @@
     color: $extra-grey;
     padding-top: 8px;
     padding-left: 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
   }
 }
 

@@ -23,9 +23,9 @@
   padding-top: 168px;
   padding-bottom: 178px;
 
-  @media (max-width: $modile-width) {
-    padding-top: 68px;
-    padding-bottom: 78px;
+  @media (max-width: $mobile-width) {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -34,10 +34,11 @@
   color: $basic-white;
   justify-content: space-between;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 40px;
+    flex-direction: column;
   }
 }
 
@@ -46,9 +47,11 @@
   line-height: $lh-additional;
   margin: 0;
   font-family: $font-additional;
+  padding-top: 10px;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 18px;
+    padding-top: 0;
   }
 }
 
@@ -56,6 +59,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width) {
+    align-items: center;
+  }
 }
 
 .user__number {
@@ -64,26 +71,26 @@
   font-size: 52px;
   line-height: $lh-additional;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 30px;
   }
 }
 
 .user__icon {
   font-size: 56px;
-  color: rgb(237, 239, 241);
-  margin-bottom: 55px;
+  color: $basic-white;
+  margin-bottom: 65px;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     font-size: 44px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 }
 
 .user__item:first-child {
   padding-left: 10px;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     padding: 0;
   }
 }
@@ -91,7 +98,7 @@
 .user__item:nth-child(2) {
   padding-left: 33px;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     padding: 0;
   }
 }

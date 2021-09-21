@@ -1,12 +1,21 @@
 .process {
   background-color: $basic-grey;
   padding-bottom: 243px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 80px;
+  }
 }
 
 .process__title-wrapper {
   text-align: center;
   margin: 0 0 130px 0;
   padding-top: 150px;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 80px;
+    margin: 0 0 60px 0;
+  }
 }
 
 .process__title {
@@ -16,6 +25,10 @@
   text-transform: uppercase;
   color: $special-grey;
   margin: 0;
+
+  @media (max-width: $mobile-width) {
+    font-size: $fs-tltle;
+  }
 }
 
 .process__add {
@@ -26,6 +39,10 @@
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.8px;
+
+  @media (max-width: $mobile-width) {
+    font-size: $fs-accent-desktop;
+  }
 }
 
 .process__description {
@@ -41,7 +58,7 @@
   display: flex;
   column-gap: 30px;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     flex-wrap: wrap;
     row-gap: 30px;
   }
@@ -55,7 +72,7 @@
   border: 1px solid $special-black;
   z-index: 0;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     width: 100%;
   }
 }
@@ -67,8 +84,9 @@
   background-image: url("/img/process/grafic.png");
   width: 100px;
   height: 100px;
-  top: 48px;
-  left: 35.6758%;
+  top: 96px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .process__item--hands::before {
@@ -78,8 +96,9 @@
   background-image: url("/img/process/hands.png");
   width: 100px;
   height: 100px;
-  top: 48px;
-  left: 35.6758%;
+  top: 96px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .process__item--card::before {
@@ -89,8 +108,9 @@
   background-image: url("/img/process/card.png");
   width: 100px;
   height: 100px;
-  top: 48px;
-  left: 35.6758%;
+  top: 96px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .background {
@@ -106,8 +126,8 @@
   background-image: linear-gradient(-18deg, $dark-blue, $light-blue);
   transform: scaleY(1.3);
 
-  @media (max-width: $modile-width) {
-    transform: scaleX(1.2);
+  @media (max-width: $mobile-width) {
+    transform: scaleX(1);
   }
 }
 

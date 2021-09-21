@@ -7,14 +7,6 @@ headerToggle.onclick = function() {
   navHeader.classList.toggle('header--opened');
 };
 
-let carousel = document.querySelector('.slider__carousel');
-let i = 1;
-for(let li of carousel.querySelectorAll('li')) {
-  li.style.position = 'relative';
-  li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
-  i++;
-}
-
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel();
 });
@@ -22,20 +14,34 @@ $(document).ready(function(){
 $('.owl-carousel').owlCarousel({
   loop:true,
   margin:30,
-  nav:true,
+  nav:false,
+  dots:true,
   responsive:{
       0:{
           items:1
       },
-      767:{
-          items:1
+      480:{
+        items:1
+      },
+      580:{
+        items:2
       },
       768:{
-        items:3
+        items:3,
+        dots:true,
+        nav:false,
       },
-      1900:{
-          items:4
-      }
+      1025:{
+          items:3,
+          dots:false,
+          nav:true,
+      },
+      1392:{
+        items:4,
+        dots:false,
+        nav:true,
+    }
+
   },
   navText:["<img src='img/slider/arrow.svg'>", "<img src='img/slider/arrow.svg'>"],
 })

@@ -1,20 +1,21 @@
 //Viewports
-$modile-width: 767px;
-$desktop-width: 768px;
+$mobile-width: 768px;
+$tablet-width: 1024px;
+$desktop-width-only: 1025px;
 
 // Fonts
-$fa-font-path:"../webfonts";
 $font-additional: "Poppins", "Arial", sans-serif;
 $font-main: "Raleway", "Arial", sans-serif;
 $font-extra: "Nunito", "Arial", sans-serif;
 $fs-main: 14px;
 $lh-main: 28px;
+$fs-accent: 30px;
 $lh-accent: 42px;
-$lh-additional: 40px;
+$lh-additional: 26px;
 $fs-additional: 24px;
 $fs-tltle: 20px;
-$fs-accent: 30px;
 $fw-normal: 400;
+$fs-accent-desktop: 25px;
 
 // Color
 $basic-black: #000000;

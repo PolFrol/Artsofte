@@ -9,7 +9,7 @@
     top: 363px;
     left: 260px;
 
-    @media (max-width: $modile-width) {
+    @media (max-width: $tablet-width) {
       display: none;
     }
   }
@@ -19,12 +19,12 @@
     position: absolute;
     width: 330px;
     height: 575px;
-    background-image: url("/img/Vector1.svg");
+    background-image: url("/img/card-shadow.svg");
     background-repeat: no-repeat;
     top: 305px;
     right: 0;
 
-    @media (max-width: $modile-width) {
+    @media (max-width: $tablet-width) {
       display: none;
     }
   }
@@ -37,38 +37,27 @@
   left: 19.5313%;
   color: $basic-white;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 330px;
-    height: 575px;
-    background-image: url("/img/Vector1.svg");
-    background-repeat: no-repeat;
-    top: 118px;
-    right: -420px;
-    left: auto;
-
-    @media (max-width: $modile-width) {
-      display: none;
-    }
+  @media (max-width: $tablet-width) {
+    left: 3%;
   }
 
-  @media (max-width: $modile-width) {
-    top: 230px;
+  @media (max-width: $mobile-width) {
+    top: 200px;
+    left: 4.866%;
   }
 }
 
 .promo__title {
-  font-size: $lh-additional;
-  line-height: 26px;
+  font-size: 40px;
   font-family: $font-additional;
   font-weight: 600;
   margin: 0;
   letter-spacing: 0.7px;
+  line-height: $lh-additional;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
+    font-size: $fs-accent;
     line-height: 45px;
-    font-size: 35px;
   }
 }
 
@@ -79,7 +68,7 @@
   margin: 28px 0 48px 0;
   padding: 0 90px;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     padding: 0 20px;
   }
 }
@@ -102,7 +91,7 @@
   margin: 93px auto 0 auto;
   padding-bottom: 40px;
 
-  @media (max-width: $modile-width) {
+  @media (max-width: $mobile-width) {
     width: 570px;
     height: auto;
   }
